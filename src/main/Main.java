@@ -2,6 +2,7 @@ package main;
 
 import java.io.IOException;
 
+
 public class Main {
     public static void main(String[] args) {
         // Todo: change this to a Command CreateDocument
@@ -12,6 +13,7 @@ public class Main {
         d1.execute(new CreateCircle(d1, 300, 300));
         d1.execute(new CreateCircle(d1, 500, 100));
         d1.execute(new CreateRectangle(d1, 20, 20));
+        d1.getShapes().get(0).setStyle(new Style("red"));
         d1.undo();
         d1.undo();
         d1.undo();
@@ -33,7 +35,7 @@ public class Main {
         System.out.println(view2);
 
         try {
-            view1.save("/tmp/cenas.svg");
+            view1.save("C:/Users/Paulo Peixoto/Desktop/cenas.svg");
         } catch (IOException e) {
             e.printStackTrace();
         }
