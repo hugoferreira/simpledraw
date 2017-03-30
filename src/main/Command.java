@@ -1,6 +1,8 @@
 package main;
 
-public interface Command {
-    void execute();
-    void undo();
+import java.io.Serializable;
+
+public abstract class Command implements Serializable {
+    abstract void execute();
+    abstract void undo();
 }

@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 import java.util.stream.Collectors;
+import java.io.Serializable;
 
-public class Document {
+public class Document implements Serializable {
     private List<Shape> shapes = new ArrayList<>();
     private Stack<Command> commands = new Stack<>();
     private Stack<Command> undos = new Stack<>();

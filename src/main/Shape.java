@@ -1,6 +1,8 @@
 package main;
 
-public abstract class Shape implements Cloneable {
+import java.io.Serializable;
+
+public abstract class Shape implements Cloneable, Serializable {
     protected int x = 0;
     protected int y = 0;
 
