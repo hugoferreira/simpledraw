@@ -1,5 +1,3 @@
-package main;
-
 public abstract class CreateShape implements Command {
     protected Document document;
     protected int x;

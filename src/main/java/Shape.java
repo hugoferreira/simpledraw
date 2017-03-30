@@ -1,5 +1,3 @@
-package main;
-
 public abstract class Shape implements Cloneable {
     protected int x = 0;
     protected int y = 0;
