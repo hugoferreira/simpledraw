@@ -35,7 +35,7 @@ public class Main {
         System.out.println(view2);
 
         try {
-            view1.save("C:/Users/Paulo Peixoto/Desktop/cenas.svg");
+            view1.save("/tmp/cenas.svg");
         } catch (IOException e) {
             e.printStackTrace();
         }
