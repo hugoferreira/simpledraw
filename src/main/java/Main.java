@@ -10,6 +10,7 @@ public class Main {
         d1.execute(new CreateCircle(d1, 300, 300));
         d1.execute(new CreateCircle(d1, 500, 100));
         d1.execute(new CreateRectangle(d1, 20, 20));
+        d1.getShapes().get(0).setStyle(new Style("red"));
         d1.undo();
         d1.undo();
         d1.undo();

@@ -4,6 +4,6 @@ public class Circle extends Shape {
     }
 
     public String toSvg() {
-        return "<circle cx='" + x + "' cy='" + y + "' r='50' style='fill:red; stroke:black; stroke-width:0.1cm' />";
+        return "<circle cx='" + x + "' cy='" + y + "' r='50' style='fill:" + this.getStyle().getColor() + "; stroke:black; stroke-width:0.1cm' />";
     }
 }
