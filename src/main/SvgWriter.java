@@ -23,7 +23,7 @@ public class SvgWriter extends PrintWriter {
     }
 
     void print(Shape s) throws IOException {
-        out.write(s.toSvg());
+        out.write(s.getRenderer().render());
     }
 
     @Override

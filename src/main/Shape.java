@@ -9,6 +9,8 @@ public abstract class Shape implements Cloneable {
         this.y = y;
     }
 
+    public abstract ShapeRenderer getRenderer();
+
     public Shape translate(int dx, int dy) {
         Shape newShape = null;
 
@@ -29,10 +31,6 @@ public abstract class Shape implements Cloneable {
 
     public int getY() {
         return y;
-    }
-
-    public String toSvg() {
-        return "";
     }
 
     @Override

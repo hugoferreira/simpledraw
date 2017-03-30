@@ -12,12 +12,17 @@ public class Group extends Shape {
     }
 
     @Override
+    public ShapeRenderer getRenderer() {
+        return null;
+    }
+
+    @Override
     public Group translate(int dx, int dy) {
         return new Group(children.stream().map(s -> s.translate(dx, dy)).collect(Collectors.toList()));
     }
 
     public String toSvg() {
-        return children.stream().map(Shape::toSvg).collect(Collectors.joining("\n"));
+        return children.stream().map(s -> s.getRenderer().render()).collect(Collectors.joining("\n"));
     }
 
 

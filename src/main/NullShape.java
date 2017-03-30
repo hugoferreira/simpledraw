@@ -8,4 +8,9 @@ public class NullShape extends Shape {
     private NullShape(int x, int y) {
         super(x, y);
     }
+
+    @Override
+    public ShapeRenderer getRenderer() {
+        return null;
+    }
 }
