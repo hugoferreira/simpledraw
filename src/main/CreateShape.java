@@ -1,12 +1,13 @@
 package main;
 
-public abstract class CreateShape implements Command {
+public abstract class CreateShape extends Command {
     protected Document document;
     protected int x;
     protected int y;
     private Shape shape;
 
     public CreateShape(Document document, int x, int y) {
+        super();
         this.x = x;
         this.y = y;
         this.document = document;
