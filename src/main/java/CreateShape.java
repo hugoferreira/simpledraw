@@ -1,8 +1,7 @@
-public abstract class CreateShape extends Command {
+public abstract class CreateShape extends ShapeCommand {
     protected Document document;
     protected int x;
     protected int y;
-    private Shape shape;
 
     public CreateShape(Document document, int x, int y) {
         super();
