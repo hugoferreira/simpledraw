@@ -1,5 +1,3 @@
-package main;
-
 public class NullShape extends Shape {
     public NullShape() {
         this(0, 0);

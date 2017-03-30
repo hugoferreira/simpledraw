@@ -1,5 +1,3 @@
-package main;
-
 public class CreateRectangle extends CreateShape {
     public CreateRectangle(Document document, int x, int y) {
         super(document, x, y);

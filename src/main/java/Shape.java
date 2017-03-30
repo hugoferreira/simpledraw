@@ -1,5 +1,3 @@
-package main;
-
 import java.io.Serializable;
 
 public abstract class Shape implements Cloneable, Serializable {
