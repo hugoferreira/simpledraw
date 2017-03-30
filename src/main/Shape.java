@@ -14,13 +14,21 @@ public abstract class Shape implements Cloneable {
 
         try {
             newShape = (Shape) this.clone();
-            newShape.x -= dx;
-            newShape.y -= dy;
+            newShape.x = newShape.getX() - dx;
+            newShape.y = newShape.getY() - dy;
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
 
         return newShape;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
     }
 
     public String toSvg() {
@@ -29,6 +37,6 @@ public abstract class Shape implements Cloneable {
 
     @Override
     public String toString() {
-        return this.getClass().getName() + " (X: " + x + ", Y: " + y + ")";
+        return this.getClass().getName() + " (X: " + getX() + ", Y: " + getY() + ")";
     }
 }
