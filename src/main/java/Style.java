@@ -1,4 +1,6 @@
-public class Style {
+import java.io.Serializable;
+
+public class Style implements Serializable{
 
     protected String color;
 
