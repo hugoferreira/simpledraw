@@ -1,5 +1,7 @@
 package main;
 
+import shapes.Shape;
+
 public abstract class CreateShape implements Command {
     protected Document document;
     protected int x;

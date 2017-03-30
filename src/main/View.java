@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import shapes.Shape;
+
 public class View {
     private Document document;
     private int originX, originY;

@@ -1,4 +1,4 @@
-package main;
+package shapes;
 
 public class Polygon extends Shape {
     public Polygon(int x, int y) {

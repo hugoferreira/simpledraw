@@ -1,4 +1,4 @@
-package main;
+package shapes;
 
 public class NullShape extends Shape {
     public NullShape() {

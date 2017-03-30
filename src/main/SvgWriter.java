@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.Writer;
 
+import shapes.Shape;
+
 public class SvgWriter extends PrintWriter {
     public SvgWriter(Writer out) throws IOException {
         super(out);

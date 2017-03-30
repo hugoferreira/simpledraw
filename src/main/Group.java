@@ -3,6 +3,8 @@ package main;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import shapes.Shape;
+
 public class Group extends Shape {
     private List<Shape> children;
 

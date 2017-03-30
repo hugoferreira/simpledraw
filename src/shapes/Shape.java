@@ -1,4 +1,4 @@
-package main;
+package shapes;
 
 public abstract class Shape implements Cloneable {
     protected int x = 0;

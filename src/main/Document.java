@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Stack;
 import java.util.stream.Collectors;
 
+import shapes.Shape;
+
 public class Document {
     private List<Shape> shapes = new ArrayList<>();
     private Stack<Command> commands = new Stack<>();
