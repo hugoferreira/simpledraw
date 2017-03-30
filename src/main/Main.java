@@ -19,6 +19,8 @@ public class Main {
         d1.redo();
         d1.redo();
 
+        d1.execute(new CreatePolygon(d1, 100, 200));
+
         /* TODO: Implement Polygon and Group
         Polygon p = new Polygon(30, 30);
 
