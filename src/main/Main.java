@@ -1,12 +1,32 @@
 package main;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Main {
+
+    private ArrayList<Document> documents = new ArrayList<>();
+
+    private static Main instance = null;
+
+    private Main() {}
+
+    private static Main getInstance() {
+        if (instance == null) {
+            instance = new Main();
+        }
+        return instance;
+    }
+
     public static void main(String[] args) {
+
+        Main app = Main.getInstance();
+
         // Todo: change this to a Command CreateDocument
         // Problem: how do we return a new command?... Should execute return stuff? Dunno...
         Document d1 = new Document();
+
+//        new CreateDocument();
 
         d1.execute(new CreateCircle(d1, 100, 100));
         d1.execute(new CreateCircle(d1, 300, 300));
@@ -19,7 +39,6 @@ public class Main {
         d1.redo();
         d1.redo();
 
-        d1.execute(new CreatePolygon(d1, 100, 200));
 
         /* TODO: Implement Polygon and Group
         Polygon p = new Polygon(30, 30);

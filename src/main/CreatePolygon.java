@@ -1,7 +1,6 @@
 package main;
 
-public class CreatePolygon extends CreateShape
-{
+public class CreatePolygon extends CreateShape {
     public CreatePolygon(Document document, int x, int y) {
         super(document, x, y);
     }
