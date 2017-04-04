@@ -1,16 +1,18 @@
 package main;
 
+import java.util.ArrayList;
+
 public class CreateDocument implements Command {
 
-    private Main app;
+    private ArrayList list;
 
-    public CreateDocument(Main app) {
-        this.app = app;
+    public CreateDocument(ArrayList list) {
+        this.list = list;
     }
 
     @Override
     public void execute() {
-        app.addDocument(new Document());
+        list.add(new Document());
     }
 
     @Override

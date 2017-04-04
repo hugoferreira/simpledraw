@@ -18,10 +18,6 @@ public class Main {
         return instance;
     }
 
-    public void addDocument(Document document) {
-        this.documents.add(document);
-    }
-
     public Document getDocument(int index) {
         return this.documents.get(index);
     }
@@ -32,7 +28,7 @@ public class Main {
 
         // Todo: change this to a Command CreateDocument
         // Problem: how do we return a new command?... Should execute return stuff? Dunno...
-        CreateDocument cd1 = new CreateDocument(app);
+        CreateDocument cd1 = new CreateDocument(app.documents);
         cd1.execute();
 
         Document d1 = app.getDocument(0);
