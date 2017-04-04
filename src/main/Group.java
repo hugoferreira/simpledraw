@@ -11,6 +11,10 @@ public class Group extends Shape {
         this.children = children;
     }
 
+    public List<Shape> getChildren(){
+        return children;
+    }
+
     @Override
     public Group translate(int dx, int dy) {
         return new Group(children.stream().map(s -> s.translate(dx, dy)).collect(Collectors.toList()));

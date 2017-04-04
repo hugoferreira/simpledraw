@@ -41,12 +41,12 @@ public class Main {
         d1.execute(new CreateCircle(d1, 500, 100));
         d1.execute(new CreateRectangle(d1, 20, 20));
         d1.execute(new CreateGroup(d1, 0,0, Arrays.asList(c1, r1)));
-        /*d1.undo();
+        d1.undo();
         d1.undo();
         d1.undo();
         d1.redo();
         d1.redo();
-        d1.redo();*/
+        d1.redo();
 
         View view1 = new View(d1);
         System.out.println(view1);
